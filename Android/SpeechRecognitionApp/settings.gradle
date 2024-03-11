@@ -1,1 +1,2 @@
 include ':app', ':speechrecognition'
+include ':kkSpeechRecognition'

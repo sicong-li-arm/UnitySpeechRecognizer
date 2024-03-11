@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognitionListener;
+import android.speech.RecognitionPart;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.text.TextUtils;
@@ -69,9 +70,14 @@ public class KKSpeechRecognizer implements RecognitionListener {
 
     private Intent createRecordingIntent(SpeechRecognitionOptions options) {
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        intent.putExtra(RecognizerIntent.EXTRA_PREFER_OFFLINE, true);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE,"kokosoft.unity");
         intent.putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, options.shouldCollectPartialResults);
+        intent.putExtra(RecognizerIntent.EXTRA_ENABLE_FORMATTING, RecognizerIntent.FORMATTING_OPTIMIZE_QUALITY);
+        intent.putExtra(RecognizerIntent.EXTRA_HIDE_PARTIAL_TRAILING_PUNCTUATION, false);
+
+        Log.i(TAG, "!!!!! Intent " + intent.toString());
         if (!TextUtils.isEmpty(options.prompt)) {
             intent.putExtra(RecognizerIntent.EXTRA_PROMPT, options.prompt);
         }
@@ -142,14 +148,25 @@ public class KKSpeechRecognizer implements RecognitionListener {
     public void onResults(Bundle results) {
         mIsRecording = false;
         ArrayList<String> strings = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
+        Log.i(TAG, "OnResults!!!");
+        for (String s : strings
+        ) {
+            Log.i(TAG, s);
+        }
         if (mListener != null) {
             mListener.gotFinalResult(strings.get(0));
         }
     }
 
+
     @Override
     public void onPartialResults(Bundle partialResults) {
         ArrayList<String> strings = partialResults.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
+        Log.i(TAG, "onPartialResults!!!");
+        for (String s : strings
+        ) {
+            Log.i(TAG, s);
+        }
         if (mListener != null) {
             mListener.gotPartialResult(TextUtils.join(" ", strings));
         }

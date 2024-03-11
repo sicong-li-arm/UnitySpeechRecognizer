@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android-SpeechRecognitionApp.iml" filepath="$PROJECT_DIR$/.idea/modules/Android-SpeechRecognitionApp.iml" group="SpeechRecognitionApp" />
-      <module fileurl="file://$PROJECT_DIR$/SpeechRecognitionApp.iml" filepath="$PROJECT_DIR$/SpeechRecognitionApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SpeechRecognitionApp-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SpeechRecognitionApp-app.iml" group="SpeechRecognitionApp/app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/speechrecognition/SpeechRecognitionApp-speechrecognition.iml" filepath="$PROJECT_DIR$/.idea/modules/speechrecognition/SpeechRecognitionApp-speechrecognition.iml" group="SpeechRecognitionApp/speechrecognition" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/speechrecognition/speechrecognition.iml" filepath="$PROJECT_DIR$/speechrecognition/speechrecognition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpeechRecognitionApp.iml" filepath="$PROJECT_DIR$/.idea/modules/SpeechRecognitionApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SpeechRecognitionApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SpeechRecognitionApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SpeechRecognitionApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SpeechRecognitionApp.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SpeechRecognitionApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SpeechRecognitionApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SpeechRecognitionApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SpeechRecognitionApp.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kkSpeechRecognition/SpeechRecognitionApp.kkSpeechRecognition.iml" filepath="$PROJECT_DIR$/.idea/modules/kkSpeechRecognition/SpeechRecognitionApp.kkSpeechRecognition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kkSpeechRecognition/SpeechRecognitionApp.kkSpeechRecognition.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/kkSpeechRecognition/SpeechRecognitionApp.kkSpeechRecognition.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kkSpeechRecognition/SpeechRecognitionApp.kkSpeechRecognition.main.iml" filepath="$PROJECT_DIR$/.idea/modules/kkSpeechRecognition/SpeechRecognitionApp.kkSpeechRecognition.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kkSpeechRecognition/SpeechRecognitionApp.kkSpeechRecognition.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/kkSpeechRecognition/SpeechRecognitionApp.kkSpeechRecognition.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/speechrecognition/SpeechRecognitionApp.speechrecognition.iml" filepath="$PROJECT_DIR$/.idea/modules/speechrecognition/SpeechRecognitionApp.speechrecognition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/speechrecognition/SpeechRecognitionApp.speechrecognition.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/speechrecognition/SpeechRecognitionApp.speechrecognition.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/speechrecognition/SpeechRecognitionApp.speechrecognition.main.iml" filepath="$PROJECT_DIR$/.idea/modules/speechrecognition/SpeechRecognitionApp.speechrecognition.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/speechrecognition/SpeechRecognitionApp.speechrecognition.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/speechrecognition/SpeechRecognitionApp.speechrecognition.unitTest.iml" />
     </modules>
   </component>
 </project>
